@@ -1,0 +1,16 @@
+[package]
+name = "market-data-parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pcap = "1.1.0"
+clap = { version = "3.2", features = ["derive"] }
+chrono = "0.4.31"
+byteorder = "1.4.3"
+anyhow = "1.0.75"
+pnet = "0.34.0"
+
+[[bin]]
+name = "parse-quote"
+path = "src/parse-quote.rs"
